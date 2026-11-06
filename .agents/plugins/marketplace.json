@@ -1,0 +1,20 @@
+{
+  "name": "francois-team-skills",
+  "interface": {
+    "displayName": "Fran\u00e7ois Team Skills"
+  },
+  "plugins": [
+    {
+      "name": "expense-claim-assistant",
+      "source": {
+        "source": "local",
+        "path": "./plugins/expense-claim-assistant"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
