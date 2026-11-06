@@ -1,0 +1,6 @@
+user-config.md
+**/user-config.md
+.DS_Store
+*.xlsx
+*.pdf
+*.zip
