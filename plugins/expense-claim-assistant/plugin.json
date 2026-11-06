@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "expense-claim-assistant",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Prepare monthly expense workbooks, numbered receipt PDFs, calendar-based descriptions, and unsent Teams approval drafts.",
   "keywords": [
     "expenses",
