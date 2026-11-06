@@ -1,0 +1,4 @@
+interface:
+  display_name: "Expense Claim Receipts"
+  short_description: "Prepare monthly claims and Teams approval drafts"
+  default_prompt: "Use $expense-claim-receipts to load my personal setup or configure it on first use, then prepare my requested monthly expense claim and Teams approval draft for my review and submission."
