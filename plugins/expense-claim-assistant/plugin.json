@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "expense-claim-assistant",
+  "version": "1.0.0",
+  "description": "Prepare monthly expense workbooks, numbered receipt PDFs, calendar-based descriptions, and unsent Teams approval drafts.",
+  "keywords": [
+    "expenses",
+    "expense claim",
+    "receipts",
+    "Excel",
+    "Teams",
+    "calendar"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Expense Claim Assistant",
+        "shortDescription": "Receipts to review-ready claims",
+        "longDescription": "Prepare monthly expense claims from your receipts and company workbook template. The assistant learns your filing conventions into a private personal configuration, creates a numbered receipt PDF, and verifies totals and references. When Chrome control is available, it checks Outlook and Google Calendar for plausible business-purpose descriptions, labeling inferred matches and leaving unsupported descriptions blank. When Teams access is available, it researches your own previous approvals and prepares an unsent approval for your review and submission. Requires a session with local file processing for receipt and workbook preparation; installing this skills-only plugin does not grant laptop, Chrome, calendar, OneDrive, or Teams access. Optional calendar and Teams steps are skipped with a clear status when unavailable. Personal settings, receipts, and account details are not bundled. Never submits an approval for you.",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Set up my expense claim assistant.",
+          "Prepare my expense claim for this month."
+        ]
+      },
+      "onboardingSkill": "./skills/expense-claim-receipts/SKILL.md"
+    }
+  }
+}
