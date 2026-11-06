@@ -51,10 +51,26 @@ Store operational settings only; exclude credentials, receipt contents, and priv
 5. Match PDF receipt numbers exactly to workbook references. Use the configured currency and category rules. Do not combine different currencies into one total without an established conversion rule.
 6. Check both calendars through Chrome using the matching instructions below and populate supported descriptions.
 7. Save and verify the final workbook and PDF in the configured destination.
-8. Prepare the Teams approval draft below and leave it ready for the user to review and submit.
+8. Stop at the mandatory file-review checkpoint below. Do not start Teams approval preparation until the user explicitly confirms that the files and descriptions are ready.
+9. After confirmation, re-read the reviewed files and prepare the Teams approval draft below, leaving it unsent for the user to review and submit.
+
+## Mandatory user review before Teams
+
+After saving and verifying the Excel workbook and numbered receipt PDF, stop and provide links to both files. Ask the user to:
+
+- Check the workbook entries, amounts, receipt references, and total, and check the receipt PDF for completeness and order.
+- Fill every required expense description and review/correct any descriptions suggested from calendar matches. Calendar-generated descriptions are suggestions and do not replace this review.
+- Save their edits and explicitly confirm that the files are ready for the Teams approval draft.
+
+Clearly say: “Please check the Excel and receipt PDF, complete or correct the description fields, and save your edits. Tell me when they are ready, and I will prepare the Teams approval draft.”
+
+End the turn at this checkpoint. Do not open or populate a new Teams approval, attach files, or treat silence, elapsed time, a successful file check, or the original request to prepare the claim as confirmation. This file-review confirmation is separate from the user's later submission of the approval.
+
+When the user confirms, re-open the actual saved workbook and PDF. Preserve their edits, recheck totals and receipt references, and verify descriptions are complete. If required descriptions are still blank or material inconsistencies remain, ask the user to resolve them before Teams unless they explicitly confirm those specific exceptions are intentional. Use the reviewed versions and revised total in Teams. If claim files change materially after review, pause for review again.
 
 ## Teams Approval Draft
 
+- Entry condition: the mandatory file-review checkpoint has been completed with explicit user confirmation. Otherwise stop at that checkpoint.
 - Open Teams Approvals using available supported tools or computer/browser control. Inspect Sent requests for an existing claim for the target month before creating one. If it is already submitted, report its status instead of duplicating it. If a matching unsent form is open, complete that form.
 - Apply the shared team approval template and process. When the live template leaves details unresolved, research recent approved expense claims to confirm those shared details, title convention, amount format, and attachment approach. Use expense claims as precedents rather than unrelated payment requests. Use the personal configuration as a starting point, then verify the current template and recent precedents before reusing its approval sequence.
 - Create a request with the verified expense-claim template. Fill the target month/year title, approvers, and exact verified workbook total. Preserve the template's configured second-stage recipients and approval logic. Resolve person suggestions to actual selected approvers and verify the resulting names and order.
@@ -96,7 +112,7 @@ Store operational settings only; exclude credentials, receipt contents, and priv
 
 ## Final Response
 
-Report:
+Before Teams, report the file links and review request and state that Teams preparation is waiting for the user. After review and draft preparation, report:
 
 - The final month folder path.
 - The final Excel workbook path.
